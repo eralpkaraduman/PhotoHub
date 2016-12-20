@@ -10,6 +10,7 @@ import Foundation
 
 struct HubChatForum: Forum {
 
+    var id: String
     var titleText: String
     var descriptionText: String
     var logoImageUrl: URL
@@ -19,6 +20,7 @@ struct HubChatForum: Forum {
 
         guard
         let json = json as? NSDictionary,
+        let id = json.value(forKeyPath: "forum.uuid") as? String,
         let titleText = json.value(forKeyPath: "forum.title") as? String,
         let descriptionText = json.value(forKeyPath: "forum.description") as? String,
         let logoImageUrlString = json.value(forKeyPath: "forum.image.url") as? String,
@@ -29,6 +31,7 @@ struct HubChatForum: Forum {
             return nil
         }
 
+        self.id = id
         self.titleText = titleText
         self.descriptionText = descriptionText
         self.logoImageUrl = logoImageUrl

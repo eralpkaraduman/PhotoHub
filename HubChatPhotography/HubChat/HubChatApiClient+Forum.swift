@@ -20,9 +20,10 @@ extension HubChatApiClient {
         return baseURLString.appending(path)
     }
 
-    fileprivate func forumPostsUrlString(forum: ForumResourceKey) -> String {
+    fileprivate func forumPostsForForumId(forumId: String) -> String {
 
-        return forumUrlString(forum: forum).appending("post/")
+        let path = String(format: "/v1/forum/%@/post", forumId)
+        return baseURLString.appending(path)
     }
 
     typealias FetchForumCompletionHandler = (HubChatApiClientError?, Forum?) -> Void
@@ -36,7 +37,8 @@ extension HubChatApiClient {
         let request = Request(
             method: .GET,
             urlString: forumUrlString(forum: .photography),
-            jsonBody: nil
+            jsonBody: nil,
+            queryItems: nil
         )
 
         return fetchJSON(request: request) { result in
@@ -60,17 +62,45 @@ extension HubChatApiClient {
         }
     }
 
-    func fetchForumPosts(
-        _ forum: ForumResourceKey,
-        completionHandler: @escaping FetchForumCompletionHandler) -> URLSessionTask {
+    func fetchPostsForForumId(
+        _ forumId: String,
+        limit: Int = 30,
+        completionHandler: @escaping FetchForumPostsCompletionHandler) -> URLSessionTask {
 
         let request = Request(
             method: .GET,
-            urlString: forumPostsUrlString(forum: .photography),
-            jsonBody: nil
+            urlString: forumPostsForForumId(forumId: forumId),
+            jsonBody: nil,
+            queryItems: [
+                URLQueryItem(
+                    name: "limit",
+                    value: String(limit)
+                )
+            ]
         )
 
-        return fetchJSON(request: request)
+        return fetchJSON(request: request) { result in
+
+            switch result {
+            case let .Success(json):
+
+                var posts = [Post]()
+
+                guard let postsJson = json["posts"] as? [Any] else {
+                    completionHandler(HubChatApiClientError.BadResponse, [])
+                    return
+                }
+
+                posts = postsJson.flatMap { HubChatPost(withJsonObject: $0) }
+
+                completionHandler(nil, posts)
+
+            case let .Failure(error):
+
+                completionHandler(error, [])
+            }
+
+        }
 
     }
 

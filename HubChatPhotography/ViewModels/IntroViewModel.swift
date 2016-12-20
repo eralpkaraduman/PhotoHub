@@ -15,7 +15,11 @@ protocol IntroViewModelViewDelegate: class {
 
 protocol IntroViewModelCoordinatorDelegate: class {
 
-    func introViewModel(_ viewModel: IntroViewModel, didLoadForum forum: Forum)
+    func introViewModel(
+        _ viewModel: IntroViewModel,
+        didLoadForum forum: Forum,
+        andPosts posts: [Post]
+    )
 }
 
 protocol IntroViewModel: class {

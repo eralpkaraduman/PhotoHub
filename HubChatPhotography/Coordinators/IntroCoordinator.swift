@@ -39,7 +39,11 @@ class IntroCoordinator: Coordinator {
 
 extension IntroCoordinator: IntroViewModelCoordinatorDelegate {
 
-    func introViewModel(_ viewModel: IntroViewModel, didLoadForum forum: Forum) {
+    func introViewModel(
+        _ viewModel: IntroViewModel,
+        didLoadForum forum: Forum,
+        andPosts posts: [Post]) {
 
+        
     }
 }

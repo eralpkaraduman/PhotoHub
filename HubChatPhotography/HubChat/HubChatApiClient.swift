@@ -24,10 +24,16 @@ class HubChatApiClient {
         let method: Method
         let urlString: String
         var jsonBody: [String: Any?]? = nil
+        var queryItems: [URLQueryItem]? = nil
 
         var urlRequest: URLRequest {
 
-            var request = URLRequest(url: URL(string: urlString)!)
+            var urlComponents = URLComponents(string: urlString)!
+            urlComponents.queryItems = queryItems
+
+            let url = urlComponents.url!
+
+            var request = URLRequest(url: url)
             request.httpMethod = method.rawValue
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("application/json", forHTTPHeaderField: "Accept")
