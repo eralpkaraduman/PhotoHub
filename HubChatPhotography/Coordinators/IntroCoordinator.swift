@@ -9,13 +9,17 @@
 import UIKit
 
 protocol IntroCoordinatorDelegate: class {
-    func introCoordinatorDidFinish(_ coordinator: IntroCoordinator)
+    func introCoordinatorDidFinish(
+        _ coordinator: IntroCoordinator,
+        forum: Forum,
+        posts: [Post]
+    )
 }
 
 class IntroCoordinator: Coordinator {
 
     weak var delegate: IntroCoordinatorDelegate?
-    var window: UIWindow!
+    var window: UIWindow
 
     init(window: UIWindow) {
         self.window = window
@@ -44,6 +48,6 @@ extension IntroCoordinator: IntroViewModelCoordinatorDelegate {
         didLoadForum forum: Forum,
         andPosts posts: [Post]) {
 
-        
+        delegate?.introCoordinatorDidFinish(self, forum: forum, posts: posts)
     }
 }

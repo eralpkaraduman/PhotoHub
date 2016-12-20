@@ -12,6 +12,7 @@ class AppCoordinator: Coordinator {
 
     enum CoordinatorKey: String {
         case intro
+        case forum
     }
 
     let window: UIWindow
@@ -29,8 +30,6 @@ class AppCoordinator: Coordinator {
 
 extension AppCoordinator: IntroCoordinatorDelegate {
 
-    //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-
     func showIntro() {
         let coordinator = IntroCoordinator(window: window)
         coordinators[.intro] = coordinator
@@ -38,7 +37,24 @@ extension AppCoordinator: IntroCoordinatorDelegate {
         coordinator.start()
     }
 
-    func introCoordinatorDidFinish(_ coordinator: IntroCoordinator) {
+    func introCoordinatorDidFinish(_ coordinator: IntroCoordinator, forum: Forum, posts: [Post]) {
 
+        coordinators[.forum] = nil
+        showForum(forum, posts: posts)
+    }
+}
+
+extension AppCoordinator {
+
+    func showForum(_ forum: Forum, posts: [Post]) {
+
+        let coordinator = ForumCoordinator(
+            window: window,
+            forum: forum,
+            posts: posts
+        )
+
+        coordinators[.forum] = coordinator
+        coordinator.start()
     }
 }
