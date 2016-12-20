@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VWk-Mh-u2K">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Forum Photo Grid View Controller-->
+        <scene sceneID="075-k0-qRQ">
+            <objects>
+                <viewController id="VWk-Mh-u2K" customClass="ForumPhotoGridViewController" customModule="HubChatPhotography" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eWo-9w-odh"/>
+                        <viewControllerLayoutGuide type="bottom" id="LbY-Cd-nCV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V1W-iX-5ir">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TbS-BU-W7I">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoGridCell" rowHeight="99" id="zqf-mZ-wvN" customClass="PhotoGridCellView" customModule="HubChatPhotography" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="99"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zqf-mZ-wvN" id="tLz-Eu-Wn5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7K-Gb-Xdj" userLabel="backdrop">
+                                                    <rect key="frame" x="-0.5" y="19.5" width="375" height="59"/>
+                                                    <color key="backgroundColor" red="0.14239607393909587" green="0.14314160312202306" blue="0.14314160312202306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wbd-r3-O5O">
+                                                    <rect key="frame" x="0.0" y="20" width="375" height="59"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hp-A0-2lT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="Z7K-Gb-Xdj" firstAttribute="centerY" secondItem="Wbd-r3-O5O" secondAttribute="centerY" id="CXK-5j-fdX"/>
+                                                <constraint firstItem="Z7K-Gb-Xdj" firstAttribute="centerX" secondItem="Wbd-r3-O5O" secondAttribute="centerX" id="MZP-vx-dzc"/>
+                                                <constraint firstItem="Wbd-r3-O5O" firstAttribute="top" secondItem="tLz-Eu-Wn5" secondAttribute="top" constant="20" id="Rbh-QC-To3"/>
+                                                <constraint firstItem="Z7K-Gb-Xdj" firstAttribute="width" secondItem="Wbd-r3-O5O" secondAttribute="width" id="Rg3-I6-eVQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Wbd-r3-O5O" secondAttribute="trailing" id="Rjd-pC-bTy"/>
+                                                <constraint firstAttribute="bottom" secondItem="Wbd-r3-O5O" secondAttribute="bottom" constant="20" id="YJZ-f8-kpt"/>
+                                                <constraint firstItem="Wbd-r3-O5O" firstAttribute="leading" secondItem="tLz-Eu-Wn5" secondAttribute="leading" id="lXx-WK-w3H"/>
+                                                <constraint firstItem="Z7K-Gb-Xdj" firstAttribute="height" secondItem="Wbd-r3-O5O" secondAttribute="height" id="pPn-0J-gHb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="creatorUsernameLabel" destination="5Hp-A0-2lT" id="UZS-ze-VIm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TbS-BU-W7I" firstAttribute="leading" secondItem="V1W-iX-5ir" secondAttribute="leading" id="FpQ-RC-a52"/>
+                            <constraint firstAttribute="trailing" secondItem="TbS-BU-W7I" secondAttribute="trailing" id="PLf-D4-dU8"/>
+                            <constraint firstItem="TbS-BU-W7I" firstAttribute="top" secondItem="eWo-9w-odh" secondAttribute="bottom" id="QRt-9g-x3L"/>
+                            <constraint firstItem="LbY-Cd-nCV" firstAttribute="top" secondItem="TbS-BU-W7I" secondAttribute="bottom" id="VNC-OV-Pkl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="TbS-BU-W7I" id="0g4-cj-quY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nd0-pe-YhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.19999999999999" y="191.1544227886057"/>
+        </scene>
+    </scenes>
+</document>

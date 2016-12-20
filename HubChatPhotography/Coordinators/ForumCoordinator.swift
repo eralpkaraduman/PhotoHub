@@ -24,20 +24,22 @@ class ForumCoordinator: Coordinator {
 
     func start() {
 
-        let sb = UIStoryboard(name: "Forum", bundle: nil)
-        guard let vc = sb.instantiateInitialViewController() as? ForumViewController else {
+        let sb = UIStoryboard(name: "ForumPhotoGrid", bundle: nil)
+        guard let vc = sb.instantiateInitialViewController() as? ForumPhotoGridViewController else {
             fatalError()
         }
 
-//        let viewModel = HubChatPhotographyForumIntroViewModel()
-//        viewModel.coordinatorDelegate = self
-//        vc.viewModel = viewModel
-//
-//        window.rootViewController = vc
+        let viewModel = HubChatForumDetailViewModel(forum: forum, posts: posts)
+        viewModel.coordinatorDelegate = self
+        vc.viewModel = viewModel
 
         vc.modalTransitionStyle = .crossDissolve
         window.rootViewController?.present(vc, animated: true, completion: nil)
     }
+}
+
+extension ForumCoordinator: ForumViewModelCoordinatorDelegate {
+
 }
 
 //extension ForumCoordinator: IntroViewModelCoordinatorDelegate {

@@ -38,9 +38,13 @@ class IntroViewController: UIViewController {
         viewModel?.loadForum()
     }
 
+    // MARK: - ViewController Configuration
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+
+    // MARK: - User Interactions
 
     fileprivate func showLoadFailedAlertForError(_ error: Error) {
 

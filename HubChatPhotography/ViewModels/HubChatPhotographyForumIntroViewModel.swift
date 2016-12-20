@@ -16,8 +16,6 @@ class HubChatPhotographyForumIntroViewModel: IntroViewModel {
     var fetchForumTask: URLSessionTask? = nil
     var fetchPostsTask: URLSessionTask? = nil
 
-    let resurceKey: HubChatApiClient.ForumResourceKey = .photography
-
     var titleText: String {
         return "Loading HubChat Photography Forum"
     }

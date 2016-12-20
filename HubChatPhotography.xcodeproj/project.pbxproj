@@ -19,15 +19,18 @@
 		534827751E0863A200BFEDF4 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534827741E0863A200BFEDF4 /* IntroViewController.swift */; };
 		534827771E08658800BFEDF4 /* IntroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534827761E08658800BFEDF4 /* IntroCoordinator.swift */; };
 		5348277A1E093A0E00BFEDF4 /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534827791E093A0E00BFEDF4 /* IntroViewModel.swift */; };
-		5348277C1E093A7300BFEDF4 /* HubChatPhotographyCategoryIntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348277B1E093A7300BFEDF4 /* HubChatPhotographyCategoryIntroViewModel.swift */; };
+		5348277C1E093A7300BFEDF4 /* HubChatPhotographyForumIntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348277B1E093A7300BFEDF4 /* HubChatPhotographyForumIntroViewModel.swift */; };
 		535C12891E097A540018D211 /* HubChatApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535C12881E097A540018D211 /* HubChatApiClient.swift */; };
 		535C128B1E097F3A0018D211 /* HubChatApiClient+Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535C128A1E097F3A0018D211 /* HubChatApiClient+Forum.swift */; };
 		535C128D1E09848B0018D211 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535C128C1E09848B0018D211 /* Post.swift */; };
 		535C128F1E0984CE0018D211 /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535C128E1E0984CE0018D211 /* JsonModel.swift */; };
 		53AC44B41E09C7B200DF04D4 /* HubChatPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44B31E09C7B200DF04D4 /* HubChatPost.swift */; };
 		53AC44B61E09D62800DF04D4 /* ForumCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44B51E09D62800DF04D4 /* ForumCoordinator.swift */; };
-		53AC44B81E09D77D00DF04D4 /* Forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC44B71E09D77D00DF04D4 /* Forum.storyboard */; };
-		53AC44BA1E09D7E200DF04D4 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44B91E09D7E200DF04D4 /* ForumViewController.swift */; };
+		53AC44B81E09D77D00DF04D4 /* ForumPhotoGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC44B71E09D77D00DF04D4 /* ForumPhotoGrid.storyboard */; };
+		53AC44BA1E09D7E200DF04D4 /* ForumPhotoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44B91E09D7E200DF04D4 /* ForumPhotoGridViewController.swift */; };
+		53AC44BC1E09E0A400DF04D4 /* ForumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44BB1E09E0A400DF04D4 /* ForumViewModel.swift */; };
+		53AC44BE1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44BD1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift */; };
+		53AC44C01E09F5BB00DF04D4 /* PhotoGridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44BF1E09F5BB00DF04D4 /* PhotoGridCellView.swift */; };
 		53C109B41E0944E40016481D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 53C109B31E0944E40016481D /* .gitkeep */; };
 		53C109B71E09454D0016481D /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B61E09454D0016481D /* Forum.swift */; };
 		53C109B91E0945CD0016481D /* HubChatForum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B81E0945CD0016481D /* HubChatForum.swift */; };
@@ -53,15 +56,18 @@
 		534827741E0863A200BFEDF4 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		534827761E08658800BFEDF4 /* IntroCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCoordinator.swift; sourceTree = "<group>"; };
 		534827791E093A0E00BFEDF4 /* IntroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewModel.swift; sourceTree = "<group>"; };
-		5348277B1E093A7300BFEDF4 /* HubChatPhotographyCategoryIntroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatPhotographyCategoryIntroViewModel.swift; sourceTree = "<group>"; };
+		5348277B1E093A7300BFEDF4 /* HubChatPhotographyForumIntroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatPhotographyForumIntroViewModel.swift; sourceTree = "<group>"; };
 		535C12881E097A540018D211 /* HubChatApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatApiClient.swift; sourceTree = "<group>"; };
 		535C128A1E097F3A0018D211 /* HubChatApiClient+Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HubChatApiClient+Forum.swift"; sourceTree = "<group>"; };
 		535C128C1E09848B0018D211 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		535C128E1E0984CE0018D211 /* JsonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
 		53AC44B31E09C7B200DF04D4 /* HubChatPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatPost.swift; sourceTree = "<group>"; };
 		53AC44B51E09D62800DF04D4 /* ForumCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumCoordinator.swift; sourceTree = "<group>"; };
-		53AC44B71E09D77D00DF04D4 /* Forum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Forum.storyboard; sourceTree = "<group>"; };
-		53AC44B91E09D7E200DF04D4 /* ForumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
+		53AC44B71E09D77D00DF04D4 /* ForumPhotoGrid.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForumPhotoGrid.storyboard; sourceTree = "<group>"; };
+		53AC44B91E09D7E200DF04D4 /* ForumPhotoGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumPhotoGridViewController.swift; sourceTree = "<group>"; };
+		53AC44BB1E09E0A400DF04D4 /* ForumViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumViewModel.swift; sourceTree = "<group>"; };
+		53AC44BD1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatForumDetailViewModel.swift; sourceTree = "<group>"; };
+		53AC44BF1E09F5BB00DF04D4 /* PhotoGridCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridCellView.swift; sourceTree = "<group>"; };
 		53C109B31E0944E40016481D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		53C109B61E09454D0016481D /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
 		53C109B81E0945CD0016481D /* HubChatForum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatForum.swift; sourceTree = "<group>"; };
@@ -161,7 +167,7 @@
 			children = (
 				5348275C1E08230600BFEDF4 /* LaunchScreen.storyboard */,
 				534827721E085E6800BFEDF4 /* Intro.storyboard */,
-				53AC44B71E09D77D00DF04D4 /* Forum.storyboard */,
+				53AC44B71E09D77D00DF04D4 /* ForumPhotoGrid.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -170,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				534827741E0863A200BFEDF4 /* IntroViewController.swift */,
-				53AC44B91E09D7E200DF04D4 /* ForumViewController.swift */,
+				53AC44B91E09D7E200DF04D4 /* ForumPhotoGridViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -179,7 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				534827781E0939F700BFEDF4 /* Protocols */,
-				5348277B1E093A7300BFEDF4 /* HubChatPhotographyCategoryIntroViewModel.swift */,
+				5348277B1E093A7300BFEDF4 /* HubChatPhotographyForumIntroViewModel.swift */,
+				53AC44BD1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 		5348276B1E0855FC00BFEDF4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				53AC44BF1E09F5BB00DF04D4 /* PhotoGridCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				534827791E093A0E00BFEDF4 /* IntroViewModel.swift */,
+				53AC44BB1E09E0A400DF04D4 /* ForumViewModel.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -300,7 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53AC44B81E09D77D00DF04D4 /* Forum.storyboard in Resources */,
+				53AC44B81E09D77D00DF04D4 /* ForumPhotoGrid.storyboard in Resources */,
 				5348275E1E08230600BFEDF4 /* LaunchScreen.storyboard in Resources */,
 				534827731E085E6800BFEDF4 /* Intro.storyboard in Resources */,
 				532184501E09745500252597 /* camera@3x.png in Resources */,
@@ -383,14 +392,17 @@
 				53C109B91E0945CD0016481D /* HubChatForum.swift in Sources */,
 				534827711E0858C500BFEDF4 /* AppCoordinator.swift in Sources */,
 				5348276F1E08588A00BFEDF4 /* Coordinator.swift in Sources */,
-				53AC44BA1E09D7E200DF04D4 /* ForumViewController.swift in Sources */,
+				53AC44BA1E09D7E200DF04D4 /* ForumPhotoGridViewController.swift in Sources */,
 				535C128B1E097F3A0018D211 /* HubChatApiClient+Forum.swift in Sources */,
 				535C128D1E09848B0018D211 /* Post.swift in Sources */,
 				535C128F1E0984CE0018D211 /* JsonModel.swift in Sources */,
 				534827541E08230600BFEDF4 /* AppDelegate.swift in Sources */,
+				53AC44C01E09F5BB00DF04D4 /* PhotoGridCellView.swift in Sources */,
 				53C109BC1E0956590016481D /* HubChatApiClientError.swift in Sources */,
-				5348277C1E093A7300BFEDF4 /* HubChatPhotographyCategoryIntroViewModel.swift in Sources */,
+				53AC44BC1E09E0A400DF04D4 /* ForumViewModel.swift in Sources */,
+				5348277C1E093A7300BFEDF4 /* HubChatPhotographyForumIntroViewModel.swift in Sources */,
 				5348277A1E093A0E00BFEDF4 /* IntroViewModel.swift in Sources */,
+				53AC44BE1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift in Sources */,
 				534827771E08658800BFEDF4 /* IntroCoordinator.swift in Sources */,
 				534827751E0863A200BFEDF4 /* IntroViewController.swift in Sources */,
 				53C109B71E09454D0016481D /* Forum.swift in Sources */,

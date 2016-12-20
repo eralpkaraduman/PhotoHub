@@ -10,4 +10,10 @@ import Foundation
 
 protocol Post: JsonModel {
 
+    var id: String { get }
+    var imageUrls: [URL] { get }
+    var creatorUserName: String { get }
+    var creatorAvatarUrl: URL { get }
+    var upVotes: Int { get }
+    var title: String? { get }
 }
