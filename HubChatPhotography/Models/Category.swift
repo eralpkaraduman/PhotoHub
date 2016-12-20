@@ -8,12 +8,10 @@
 
 import Foundation
 
-protocol Category {
+protocol Category: JsonModel {
 
     var headerImageUrl: URL { get }
     var logoImageUrl: URL { get }
     var titleText: String { get }
     var descriptionText: String { get }
-
-    init?(withJsonObject json: Any)
 }
