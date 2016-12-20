@@ -18,8 +18,7 @@ class HubChatPhotographyCategoryIntroViewModel: IntroViewModel {
     }
 
     func loadCategory() {
-        //introViewModel(_ viewModel: IntroViewModel, failedToLoadWithError error: Error)
 
-        viewDelegate?.introViewModel(self, failedToLoadWithError: HubChatApiClientError.Unknown)
+        //viewDelegate?.introViewModel(self, failedToLoadWithError: HubChatApiClientError.Unknown)
     }
 }

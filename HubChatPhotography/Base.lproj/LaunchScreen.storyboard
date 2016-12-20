@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zkV-D4-Aw5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,34 +10,39 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="vVF-o1-Iy4">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController id="zkV-D4-Aw5" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="yGz-WP-x3C"/>
+                        <viewControllerLayoutGuide type="bottom" id="IKf-q7-G5K"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="uOy-Lq-ANP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="mqX-l1-Gg3">
-                                <rect key="frame" x="87.5" y="250" width="200" height="167"/>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="3cv-g8-Ud0">
+                                <rect key="frame" x="87" y="250" width="200" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Mch-R3-feH"/>
+                                    <constraint firstAttribute="height" constant="167" id="q9e-7H-jaG"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.12941177189350128" green="0.12941177189350128" blue="0.12941177189350128" alpha="0.76320457458496094" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mqX-l1-Gg3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="JhQ-UX-TNy"/>
-                            <constraint firstItem="mqX-l1-Gg3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="W8H-KY-VE9"/>
+                            <constraint firstItem="3cv-g8-Ud0" firstAttribute="centerY" secondItem="uOy-Lq-ANP" secondAttribute="centerY" id="Eel-7s-gQ9"/>
+                            <constraint firstItem="3cv-g8-Ud0" firstAttribute="centerX" secondItem="uOy-Lq-ANP" secondAttribute="centerX" id="H3D-jR-fAi"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mF-Ad-RcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-820" y="311"/>
         </scene>
     </scenes>
     <resources>
-        <image name="camera" width="200" height="167"/>
+        <image name="camera.png" width="200" height="167"/>
     </resources>
 </document>

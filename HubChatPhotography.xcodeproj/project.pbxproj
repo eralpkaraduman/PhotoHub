@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5321844D1E09745500252597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532184491E09745500252597 /* Assets.xcassets */; };
+		5321844E1E09745500252597 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321844A1E09745500252597 /* camera.png */; };
+		5321844F1E09745500252597 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321844B1E09745500252597 /* camera@2x.png */; };
+		532184501E09745500252597 /* camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5321844C1E09745500252597 /* camera@3x.png */; };
 		534827541E08230600BFEDF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534827531E08230600BFEDF4 /* AppDelegate.swift */; };
-		5348275B1E08230600BFEDF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5348275A1E08230600BFEDF4 /* Assets.xcassets */; };
 		5348275E1E08230600BFEDF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5348275C1E08230600BFEDF4 /* LaunchScreen.storyboard */; };
 		5348276F1E08588A00BFEDF4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348276E1E08588A00BFEDF4 /* Coordinator.swift */; };
 		534827711E0858C500BFEDF4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534827701E0858C500BFEDF4 /* AppCoordinator.swift */; };
@@ -24,9 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		532184491E09745500252597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5321844A1E09745500252597 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		5321844B1E09745500252597 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		5321844C1E09745500252597 /* camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@3x.png"; sourceTree = "<group>"; };
 		534827501E08230600BFEDF4 /* HubChatPhotography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubChatPhotography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534827531E08230600BFEDF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5348275A1E08230600BFEDF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5348275D1E08230600BFEDF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5348275F1E08230600BFEDF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5348276E1E08588A00BFEDF4 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -53,6 +59,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		532184481E09745500252597 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				532184491E09745500252597 /* Assets.xcassets */,
+				5321844A1E09745500252597 /* camera.png */,
+				5321844B1E09745500252597 /* camera@2x.png */,
+				5321844C1E09745500252597 /* camera@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		534827471E08230600BFEDF4 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +89,7 @@
 		534827521E08230600BFEDF4 /* HubChatPhotography */ = {
 			isa = PBXGroup;
 			children = (
+				532184481E09745500252597 /* Assets */,
 				534827651E0855FC00BFEDF4 /* Configuration */,
 				534827661E0855FC00BFEDF4 /* Coordinators */,
 				534827671E0855FC00BFEDF4 /* HubChat */,
@@ -81,7 +99,6 @@
 				5348276A1E0855FC00BFEDF4 /* ViewModels */,
 				5348276B1E0855FC00BFEDF4 /* Views */,
 				534827531E08230600BFEDF4 /* AppDelegate.swift */,
-				5348275A1E08230600BFEDF4 /* Assets.xcassets */,
 				5348275F1E08230600BFEDF4 /* Info.plist */,
 			);
 			path = HubChatPhotography;
@@ -181,6 +198,7 @@
 				5348274C1E08230600BFEDF4 /* Sources */,
 				5348274D1E08230600BFEDF4 /* Frameworks */,
 				5348274E1E08230600BFEDF4 /* Resources */,
+				532184471E096A3100252597 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -233,12 +251,31 @@
 			files = (
 				5348275E1E08230600BFEDF4 /* LaunchScreen.storyboard in Resources */,
 				534827731E085E6800BFEDF4 /* Intro.storyboard in Resources */,
-				5348275B1E08230600BFEDF4 /* Assets.xcassets in Resources */,
+				532184501E09745500252597 /* camera@3x.png in Resources */,
+				5321844D1E09745500252597 /* Assets.xcassets in Resources */,
 				53C109B41E0944E40016481D /* .gitkeep in Resources */,
+				5321844E1E09745500252597 /* camera.png in Resources */,
+				5321844F1E09745500252597 /* camera@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		532184471E096A3100252597 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5348274C1E08230600BFEDF4 /* Sources */ = {
