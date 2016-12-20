@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Yxx-21-fPd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="xbu-fs-NZk">
+            <objects>
+                <viewController id="Yxx-21-fPd" customClass="IntroViewController" customModule="HubChatPhotography" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YaJ-jz-Ysq"/>
+                        <viewControllerLayoutGuide type="bottom" id="a5i-i5-kAD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iUU-Cz-V8M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="LgO-SV-bEV">
+                                <rect key="frame" x="87" y="250" width="200" height="167"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1qb-hv-kpo">
+                                <rect key="frame" x="151.5" y="437" width="71.5" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intro Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqD-A8-dZF">
+                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="eFZ-0O-2E2">
+                                        <rect key="frame" x="17.5" y="28" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941177189350128" green="0.12941177189350128" blue="0.12941177189350128" alpha="0.76320457458496094" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LgO-SV-bEV" firstAttribute="centerX" secondItem="iUU-Cz-V8M" secondAttribute="centerX" id="34M-Qk-sxt"/>
+                            <constraint firstItem="1qb-hv-kpo" firstAttribute="centerX" secondItem="LgO-SV-bEV" secondAttribute="centerX" id="E3T-I7-JIr"/>
+                            <constraint firstItem="1qb-hv-kpo" firstAttribute="top" secondItem="LgO-SV-bEV" secondAttribute="bottom" constant="20" id="Jsf-kw-Ixa"/>
+                            <constraint firstItem="LgO-SV-bEV" firstAttribute="centerY" secondItem="iUU-Cz-V8M" secondAttribute="centerY" id="Zsh-Kg-j6i"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="XqD-A8-dZF" id="SQA-tw-5Yg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkI-s7-NL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="204.64767616191907"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="200" height="167"/>
+    </resources>
+</document>

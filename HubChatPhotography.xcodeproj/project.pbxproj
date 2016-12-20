@@ -10,6 +10,17 @@
 		534827541E08230600BFEDF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534827531E08230600BFEDF4 /* AppDelegate.swift */; };
 		5348275B1E08230600BFEDF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5348275A1E08230600BFEDF4 /* Assets.xcassets */; };
 		5348275E1E08230600BFEDF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5348275C1E08230600BFEDF4 /* LaunchScreen.storyboard */; };
+		5348276F1E08588A00BFEDF4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348276E1E08588A00BFEDF4 /* Coordinator.swift */; };
+		534827711E0858C500BFEDF4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534827701E0858C500BFEDF4 /* AppCoordinator.swift */; };
+		534827731E085E6800BFEDF4 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534827721E085E6800BFEDF4 /* Intro.storyboard */; };
+		534827751E0863A200BFEDF4 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534827741E0863A200BFEDF4 /* IntroViewController.swift */; };
+		534827771E08658800BFEDF4 /* IntroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534827761E08658800BFEDF4 /* IntroCoordinator.swift */; };
+		5348277A1E093A0E00BFEDF4 /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534827791E093A0E00BFEDF4 /* IntroViewModel.swift */; };
+		5348277C1E093A7300BFEDF4 /* HubChatPhotographyCategoryIntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5348277B1E093A7300BFEDF4 /* HubChatPhotographyCategoryIntroViewModel.swift */; };
+		53C109B41E0944E40016481D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 53C109B31E0944E40016481D /* .gitkeep */; };
+		53C109B71E09454D0016481D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B61E09454D0016481D /* Category.swift */; };
+		53C109B91E0945CD0016481D /* HubChatCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B81E0945CD0016481D /* HubChatCategory.swift */; };
+		53C109BC1E0956590016481D /* HubChatApiClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109BB1E0956590016481D /* HubChatApiClientError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +29,17 @@
 		5348275A1E08230600BFEDF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5348275D1E08230600BFEDF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5348275F1E08230600BFEDF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5348276E1E08588A00BFEDF4 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		534827701E0858C500BFEDF4 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		534827721E085E6800BFEDF4 /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		534827741E0863A200BFEDF4 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		534827761E08658800BFEDF4 /* IntroCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCoordinator.swift; sourceTree = "<group>"; };
+		534827791E093A0E00BFEDF4 /* IntroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewModel.swift; sourceTree = "<group>"; };
+		5348277B1E093A7300BFEDF4 /* HubChatPhotographyCategoryIntroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatPhotographyCategoryIntroViewModel.swift; sourceTree = "<group>"; };
+		53C109B31E0944E40016481D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		53C109B61E09454D0016481D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		53C109B81E0945CD0016481D /* HubChatCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatCategory.swift; sourceTree = "<group>"; };
+		53C109BB1E0956590016481D /* HubChatApiClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatApiClientError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +72,103 @@
 		534827521E08230600BFEDF4 /* HubChatPhotography */ = {
 			isa = PBXGroup;
 			children = (
+				534827651E0855FC00BFEDF4 /* Configuration */,
+				534827661E0855FC00BFEDF4 /* Coordinators */,
+				534827671E0855FC00BFEDF4 /* HubChat */,
+				534827681E0855FC00BFEDF4 /* Storyboards */,
+				534827691E0855FC00BFEDF4 /* ViewControllers */,
+				53C109B51E09450C0016481D /* Models */,
+				5348276A1E0855FC00BFEDF4 /* ViewModels */,
+				5348276B1E0855FC00BFEDF4 /* Views */,
 				534827531E08230600BFEDF4 /* AppDelegate.swift */,
 				5348275A1E08230600BFEDF4 /* Assets.xcassets */,
-				5348275C1E08230600BFEDF4 /* LaunchScreen.storyboard */,
 				5348275F1E08230600BFEDF4 /* Info.plist */,
 			);
 			path = HubChatPhotography;
+			sourceTree = "<group>";
+		};
+		534827651E0855FC00BFEDF4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				53C109B31E0944E40016481D /* .gitkeep */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		534827661E0855FC00BFEDF4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5348276E1E08588A00BFEDF4 /* Coordinator.swift */,
+				534827701E0858C500BFEDF4 /* AppCoordinator.swift */,
+				534827761E08658800BFEDF4 /* IntroCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		534827671E0855FC00BFEDF4 /* HubChat */ = {
+			isa = PBXGroup;
+			children = (
+				53C109BB1E0956590016481D /* HubChatApiClientError.swift */,
+			);
+			path = HubChat;
+			sourceTree = "<group>";
+		};
+		534827681E0855FC00BFEDF4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5348275C1E08230600BFEDF4 /* LaunchScreen.storyboard */,
+				534827721E085E6800BFEDF4 /* Intro.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		534827691E0855FC00BFEDF4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				534827741E0863A200BFEDF4 /* IntroViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5348276A1E0855FC00BFEDF4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				534827781E0939F700BFEDF4 /* Protocols */,
+				5348277B1E093A7300BFEDF4 /* HubChatPhotographyCategoryIntroViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5348276B1E0855FC00BFEDF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		534827781E0939F700BFEDF4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				534827791E093A0E00BFEDF4 /* IntroViewModel.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		53C109B51E09450C0016481D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53C109BA1E0948A50016481D /* protocols */,
+				53C109B81E0945CD0016481D /* HubChatCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53C109BA1E0948A50016481D /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				53C109B61E09454D0016481D /* Category.swift */,
+			);
+			name = protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5348275E1E08230600BFEDF4 /* LaunchScreen.storyboard in Resources */,
+				534827731E085E6800BFEDF4 /* Intro.storyboard in Resources */,
 				5348275B1E08230600BFEDF4 /* Assets.xcassets in Resources */,
+				53C109B41E0944E40016481D /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +245,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C109B91E0945CD0016481D /* HubChatCategory.swift in Sources */,
+				534827711E0858C500BFEDF4 /* AppCoordinator.swift in Sources */,
+				5348276F1E08588A00BFEDF4 /* Coordinator.swift in Sources */,
 				534827541E08230600BFEDF4 /* AppDelegate.swift in Sources */,
+				53C109BC1E0956590016481D /* HubChatApiClientError.swift in Sources */,
+				5348277C1E093A7300BFEDF4 /* HubChatPhotographyCategoryIntroViewModel.swift in Sources */,
+				5348277A1E093A0E00BFEDF4 /* IntroViewModel.swift in Sources */,
+				534827771E08658800BFEDF4 /* IntroCoordinator.swift in Sources */,
+				534827751E0863A200BFEDF4 /* IntroViewController.swift in Sources */,
+				53C109B71E09454D0016481D /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +267,7 @@
 				5348275D1E08230600BFEDF4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -286,6 +411,7 @@
 				534827641E08230600BFEDF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
