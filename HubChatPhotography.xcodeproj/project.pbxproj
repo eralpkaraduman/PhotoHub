@@ -25,8 +25,8 @@
 		535C128D1E09848B0018D211 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535C128C1E09848B0018D211 /* Post.swift */; };
 		535C128F1E0984CE0018D211 /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535C128E1E0984CE0018D211 /* JsonModel.swift */; };
 		53C109B41E0944E40016481D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 53C109B31E0944E40016481D /* .gitkeep */; };
-		53C109B71E09454D0016481D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B61E09454D0016481D /* Category.swift */; };
-		53C109B91E0945CD0016481D /* HubChatCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B81E0945CD0016481D /* HubChatCategory.swift */; };
+		53C109B71E09454D0016481D /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B61E09454D0016481D /* Forum.swift */; };
+		53C109B91E0945CD0016481D /* HubChatForum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B81E0945CD0016481D /* HubChatForum.swift */; };
 		53C109BC1E0956590016481D /* HubChatApiClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109BB1E0956590016481D /* HubChatApiClientError.swift */; };
 		CC543EFED073909992FD9755 /* Pods_HubChatPhotography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30641FED968D7F90152D7B3A /* Pods_HubChatPhotography.framework */; };
 /* End PBXBuildFile section */
@@ -55,8 +55,8 @@
 		535C128C1E09848B0018D211 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		535C128E1E0984CE0018D211 /* JsonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
 		53C109B31E0944E40016481D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		53C109B61E09454D0016481D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		53C109B81E0945CD0016481D /* HubChatCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatCategory.swift; sourceTree = "<group>"; };
+		53C109B61E09454D0016481D /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
+		53C109B81E0945CD0016481D /* HubChatForum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatForum.swift; sourceTree = "<group>"; };
 		53C109BB1E0956590016481D /* HubChatApiClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatApiClientError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				53C109BA1E0948A50016481D /* protocols */,
-				53C109B81E0945CD0016481D /* HubChatCategory.swift */,
+				53C109B81E0945CD0016481D /* HubChatForum.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 		53C109BA1E0948A50016481D /* protocols */ = {
 			isa = PBXGroup;
 			children = (
-				53C109B61E09454D0016481D /* Category.swift */,
+				53C109B61E09454D0016481D /* Forum.swift */,
 				535C128C1E09848B0018D211 /* Post.swift */,
 				535C128E1E0984CE0018D211 /* JsonModel.swift */,
 			);
@@ -366,7 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53C109B91E0945CD0016481D /* HubChatCategory.swift in Sources */,
+				53C109B91E0945CD0016481D /* HubChatForum.swift in Sources */,
 				534827711E0858C500BFEDF4 /* AppCoordinator.swift in Sources */,
 				5348276F1E08588A00BFEDF4 /* Coordinator.swift in Sources */,
 				535C128B1E097F3A0018D211 /* HubChatApiClient+Forum.swift in Sources */,
@@ -378,7 +378,7 @@
 				5348277A1E093A0E00BFEDF4 /* IntroViewModel.swift in Sources */,
 				534827771E08658800BFEDF4 /* IntroCoordinator.swift in Sources */,
 				534827751E0863A200BFEDF4 /* IntroViewController.swift in Sources */,
-				53C109B71E09454D0016481D /* Category.swift in Sources */,
+				53C109B71E09454D0016481D /* Forum.swift in Sources */,
 				535C12891E097A540018D211 /* HubChatApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

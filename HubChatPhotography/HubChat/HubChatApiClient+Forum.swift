@@ -25,7 +25,7 @@ extension HubChatApiClient {
         return forumUrlString(forum: forum).appending("post/")
     }
 
-    typealias FetchForumCompletionHandler = (HubChatApiClientError?, Category?) -> Void
+    typealias FetchForumCompletionHandler = (HubChatApiClientError?, Forum?) -> Void
 
     typealias FetchForumPostsCompletionHandler = (HubChatApiClientError?, [Post]) -> Void
 
@@ -44,7 +44,7 @@ extension HubChatApiClient {
             switch result {
             case let .Success(json):
 
-                if let forum = HubChatCategory(withJsonObject: json) {
+                if let forum = HubChatForum(withJsonObject: json) {
 
                     completionHandler(nil, forum)
 

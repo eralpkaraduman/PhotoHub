@@ -29,7 +29,7 @@ class IntroCoordinator: Coordinator {
             fatalError()
         }
 
-        let viewModel = HubChatPhotographyCategoryIntroViewModel()
+        let viewModel = HubChatPhotographyForumIntroViewModel()
         viewModel.coordinatorDelegate = self
         vc.viewModel = viewModel
 
@@ -39,7 +39,7 @@ class IntroCoordinator: Coordinator {
 
 extension IntroCoordinator: IntroViewModelCoordinatorDelegate {
 
-    func introViewModel(_ viewModel: IntroViewModel, didLoadCategory category: Category) {
+    func introViewModel(_ viewModel: IntroViewModel, didLoadForum forum: Forum) {
 
     }
 }

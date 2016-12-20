@@ -1,5 +1,5 @@
 //
-//  Category.swift
+//  Forum.swift
 //  HubChatPhotography
 //
 //  Created by Eralp Karaduman on 12/20/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Category: JsonModel {
+protocol Forum: JsonModel {
 
     var headerImageUrl: URL { get }
     var logoImageUrl: URL { get }

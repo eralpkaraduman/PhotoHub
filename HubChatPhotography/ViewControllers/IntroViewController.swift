@@ -35,7 +35,7 @@ class IntroViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        viewModel?.loadCategory()
+        viewModel?.loadForum()
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -52,7 +52,7 @@ class IntroViewController: UIViewController {
 
         let action = UIAlertAction(title: "OK", style: .default) { _ in
 
-            self.viewModel?.loadCategory()
+            self.viewModel?.loadForum()
         }
 
         alertController.addAction(action)

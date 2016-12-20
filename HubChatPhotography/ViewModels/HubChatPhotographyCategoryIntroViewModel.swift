@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HubChatPhotographyCategoryIntroViewModel: IntroViewModel {
+class HubChatPhotographyForumIntroViewModel: IntroViewModel {
 
     weak var coordinatorDelegate: IntroViewModelCoordinatorDelegate?
     weak var viewDelegate: IntroViewModelViewDelegate?
@@ -19,7 +19,7 @@ class HubChatPhotographyCategoryIntroViewModel: IntroViewModel {
         return "Loading HubChat Photography Forum"
     }
 
-    func loadCategory() {
+    func loadForum() {
 
         fetchForumTask = HubChatApiClient.shared.fetchForum(.photography) { (error, forum) in
 

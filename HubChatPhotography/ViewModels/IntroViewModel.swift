@@ -15,8 +15,7 @@ protocol IntroViewModelViewDelegate: class {
 
 protocol IntroViewModelCoordinatorDelegate: class {
 
-    func introViewModel(_ viewModel: IntroViewModel, didLoadCategory category: Category)
-
+    func introViewModel(_ viewModel: IntroViewModel, didLoadForum forum: Forum)
 }
 
 protocol IntroViewModel: class {
@@ -26,5 +25,5 @@ protocol IntroViewModel: class {
 
     var titleText: String { get }
 
-    func loadCategory()
+    func loadForum()
 }

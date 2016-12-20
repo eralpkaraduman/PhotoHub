@@ -1,5 +1,5 @@
 //
-//  HubChatCategory.swift
+//  HubChatForum.swift
 //  HubChatPhotography
 //
 //  Created by Eralp Karaduman on 12/20/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct HubChatCategory: Category {
+struct HubChatForum: Forum {
 
     var titleText: String
     var descriptionText: String
