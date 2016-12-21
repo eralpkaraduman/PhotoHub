@@ -32,4 +32,23 @@ class PhotoGridCellViewModel {
         return String(post.upVotes)
     }
 
+    var numberOfPhotos: Int {
+        return post.imageUrls.count
+    }
+
+    func photoUrlAtIndex(_ index: Int) -> URL? {
+
+        guard 0 ..< numberOfPhotos ~= index else {
+            return nil
+        }
+
+        return post.imageUrls[index]
+    }
+
+
+    func thumbnailUrlAtIndex(_ index: Int) -> URL? {
+
+        return photoUrlAtIndex(index)
+    }
+
 }

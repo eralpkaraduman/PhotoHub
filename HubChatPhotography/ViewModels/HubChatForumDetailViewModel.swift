@@ -31,7 +31,7 @@ class HubChatForumDetailViewModel: ForumViewModel {
 
     func postAtIndex(_ index: Int) -> Post? {
 
-        guard 0 ... numberOfPosts ~= index else {
+        guard 0 ..< numberOfPosts ~= index else {
             return nil
         }
 
