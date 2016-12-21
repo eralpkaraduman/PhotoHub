@@ -104,4 +104,8 @@ extension PhotoGridCellView: UICollectionViewDataSource {
 
 extension PhotoGridCellView: UICollectionViewDelegate {
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel?.selectPhotoAtIndex(indexPath.item)
+    }
+
 }

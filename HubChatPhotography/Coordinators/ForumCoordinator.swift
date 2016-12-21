@@ -40,15 +40,7 @@ class ForumCoordinator: Coordinator {
 
 extension ForumCoordinator: ForumViewModelCoordinatorDelegate {
 
+    internal func forumViewModel(_ viewModel: ForumViewModel, didSelectPhotoUrl url: URL) {
+        
+    }
 }
-
-//extension ForumCoordinator: IntroViewModelCoordinatorDelegate {
-//
-//    func introViewModel(
-//        _ viewModel: IntroViewModel,
-//        didLoadForum forum: Forum,
-//        andPosts posts: [Post]) {
-//
-//        delegate?.introCoordinatorDidFinish(self, forum: forum, posts: posts)
-//    }
-//}

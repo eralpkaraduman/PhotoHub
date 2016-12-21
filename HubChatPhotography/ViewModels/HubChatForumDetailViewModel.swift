@@ -58,4 +58,10 @@ class HubChatForumDetailViewModel: ForumViewModel {
 
         return nil
     }
+
+
+    func selectPhotoUrl(_ photoUrl: URL) {
+
+        coordinatorDelegate?.forumViewModel(self, didSelectPhotoUrl: photoUrl)
+    }
 }

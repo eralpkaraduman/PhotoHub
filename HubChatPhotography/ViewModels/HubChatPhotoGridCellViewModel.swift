@@ -10,7 +10,9 @@ import Foundation
 
 class HubChatPhotoGridCellViewModel: PhotoGridCellViewModel {
 
-    let post: Post
+    weak var delegate: PhotoGridCellViewModelDelegate?
+
+    var post: Post
 
     init(post: Post) {
         self.post = post
@@ -48,5 +50,9 @@ class HubChatPhotoGridCellViewModel: PhotoGridCellViewModel {
     func thumbnailUrlAtIndex(_ index: Int) -> URL? {
 
         return photoUrlAtIndex(index)
+    }
+
+    func selectPhotoAtIndex(_ index: Int) {
+        delegate?.photoGridCellViewModel(self, didSelectPhotoAtIndex: index)
     }
 }

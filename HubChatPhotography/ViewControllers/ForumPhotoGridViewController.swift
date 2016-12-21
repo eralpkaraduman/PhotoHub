@@ -118,20 +118,29 @@ extension ForumPhotoGridViewController: UITableViewDataSource {
         }
 
         cellView.viewModel = viewModel?.photoGridCellViewModelAtIndex(indexPath.row)
+        cellView.viewModel?.delegate = self
 
         return cellView
     }
 }
 
-extension ForumPhotoGridViewController: UITableViewDelegate {
-
-}
-
-extension ForumPhotoGridViewController: UIScrollViewDelegate {
+extension ForumPhotoGridViewController: UITableViewDelegate, UIScrollViewDelegate {
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
         updateHeaderLayout()
     }
 
+}
+
+extension ForumPhotoGridViewController: PhotoGridCellViewModelDelegate {
+
+    func photoGridCellViewModel(
+        _ cellViewModel: PhotoGridCellViewModel,
+        didSelectPhotoAtIndex index: Int) {
+
+        if let url = cellViewModel.photoUrlAtIndex(index) {
+            viewModel?.selectPhotoUrl(url)
+        }
+    }
 }

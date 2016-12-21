@@ -8,8 +8,19 @@
 
 import Foundation
 
+protocol PhotoGridCellViewModelDelegate: class {
+
+    func photoGridCellViewModel(
+        _ cellViewModel: PhotoGridCellViewModel,
+        didSelectPhotoAtIndex index: Int
+    )
+    
+}
+
 protocol PhotoGridCellViewModel {
 
+    var post: Post { get set }
+    weak var delegate: PhotoGridCellViewModelDelegate? { get set }
     var avatarImageUrl: URL { get }
     var creatorUserName: String { get }
     var titleText: String? { get }
@@ -18,4 +29,5 @@ protocol PhotoGridCellViewModel {
 
     func photoUrlAtIndex(_ index: Int) -> URL?
     func thumbnailUrlAtIndex(_ index: Int) -> URL?
+    func selectPhotoAtIndex(_ index: Int)
 }

@@ -13,7 +13,7 @@ protocol ForumViewModelViewDelegate: class {
 }
 
 protocol ForumViewModelCoordinatorDelegate: class {
-
+    func forumViewModel(_ viewModel: ForumViewModel, didSelectPhotoUrl url: URL)
 }
 
 protocol ForumViewModel: class {
@@ -31,5 +31,5 @@ protocol ForumViewModel: class {
 
     func postAtIndex(_ index: Int) -> Post?
     func photoGridCellViewModelAtIndex(_ index: Int) -> PhotoGridCellViewModel?
-
+    func selectPhotoUrl(_ photoUrl: URL)
 }
