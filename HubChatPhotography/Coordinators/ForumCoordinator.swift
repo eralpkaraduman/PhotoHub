@@ -15,6 +15,7 @@ class ForumCoordinator: Coordinator {
     var window: UIWindow
     let forum: Forum
     let posts: [Post]
+    var imageDetailCoordinator: ImageDetailCoordinator? = nil
 
     init(window: UIWindow, forum: Forum, posts: [Post]) {
         self.window = window
@@ -41,6 +42,17 @@ class ForumCoordinator: Coordinator {
 extension ForumCoordinator: ForumViewModelCoordinatorDelegate {
 
     internal func forumViewModel(_ viewModel: ForumViewModel, didSelectPhotoUrl url: URL) {
-        
+
+        imageDetailCoordinator = ImageDetailCoordinator(window: window, imageUrl: url)
+        imageDetailCoordinator?.delegate = self
+        imageDetailCoordinator?.start()
+    }
+}
+
+extension ForumCoordinator: ImageDetailCoordinatorDelegate {
+
+    func imageDetailCoordinatorDidFinish(_ coordinator: ImageDetailCoordinator) {
+
+        self.imageDetailCoordinator = nil
     }
 }

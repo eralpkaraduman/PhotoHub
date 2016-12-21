@@ -35,6 +35,8 @@
 		53AC44C61E0A0D4900DF04D4 /* PhotoGridThumbnailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44C51E0A0D4900DF04D4 /* PhotoGridThumbnailCellView.swift */; };
 		53AC44C81E0A206400DF04D4 /* HubChatPhotoGridCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44C71E0A206400DF04D4 /* HubChatPhotoGridCellViewModel.swift */; };
 		53AC44CA1E0A237500DF04D4 /* ForumHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44C91E0A237500DF04D4 /* ForumHeaderView.swift */; };
+		53AC44CC1E0A539000DF04D4 /* ImageDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44CB1E0A539000DF04D4 /* ImageDetailCoordinator.swift */; };
+		53AC44CE1E0A553F00DF04D4 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44CD1E0A553F00DF04D4 /* ImageDetailViewController.swift */; };
 		53C109B41E0944E40016481D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 53C109B31E0944E40016481D /* .gitkeep */; };
 		53C109B71E09454D0016481D /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B61E09454D0016481D /* Forum.swift */; };
 		53C109B91E0945CD0016481D /* HubChatForum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B81E0945CD0016481D /* HubChatForum.swift */; };
@@ -76,6 +78,8 @@
 		53AC44C51E0A0D4900DF04D4 /* PhotoGridThumbnailCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridThumbnailCellView.swift; sourceTree = "<group>"; };
 		53AC44C71E0A206400DF04D4 /* HubChatPhotoGridCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatPhotoGridCellViewModel.swift; sourceTree = "<group>"; };
 		53AC44C91E0A237500DF04D4 /* ForumHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumHeaderView.swift; sourceTree = "<group>"; };
+		53AC44CB1E0A539000DF04D4 /* ImageDetailCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailCoordinator.swift; sourceTree = "<group>"; };
+		53AC44CD1E0A553F00DF04D4 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		53C109B31E0944E40016481D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		53C109B61E09454D0016481D /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
 		53C109B81E0945CD0016481D /* HubChatForum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatForum.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				534827701E0858C500BFEDF4 /* AppCoordinator.swift */,
 				534827761E08658800BFEDF4 /* IntroCoordinator.swift */,
 				53AC44B51E09D62800DF04D4 /* ForumCoordinator.swift */,
+				53AC44CB1E0A539000DF04D4 /* ImageDetailCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			children = (
 				534827741E0863A200BFEDF4 /* IntroViewController.swift */,
 				53AC44B91E09D7E200DF04D4 /* ForumPhotoGridViewController.swift */,
+				53AC44CD1E0A553F00DF04D4 /* ImageDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -401,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53AC44B41E09C7B200DF04D4 /* HubChatPost.swift in Sources */,
+				53AC44CE1E0A553F00DF04D4 /* ImageDetailViewController.swift in Sources */,
 				53C109B91E0945CD0016481D /* HubChatForum.swift in Sources */,
 				534827711E0858C500BFEDF4 /* AppCoordinator.swift in Sources */,
 				5348276F1E08588A00BFEDF4 /* Coordinator.swift in Sources */,
@@ -416,6 +423,7 @@
 				5348277C1E093A7300BFEDF4 /* HubChatPhotographyForumIntroViewModel.swift in Sources */,
 				5348277A1E093A0E00BFEDF4 /* IntroViewModel.swift in Sources */,
 				53AC44C61E0A0D4900DF04D4 /* PhotoGridThumbnailCellView.swift in Sources */,
+				53AC44CC1E0A539000DF04D4 /* ImageDetailCoordinator.swift in Sources */,
 				53AC44C41E0A023200DF04D4 /* PhotoGridCellViewModel.swift in Sources */,
 				53AC44BE1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift in Sources */,
 				534827771E08658800BFEDF4 /* IntroCoordinator.swift in Sources */,
