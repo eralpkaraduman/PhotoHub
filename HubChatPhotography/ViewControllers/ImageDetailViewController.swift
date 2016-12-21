@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 protocol ImageDetailViewControllerDelegate: class {
     func imageDetailViewControllerDidFinish(_ controller: ImageDetailViewController)
@@ -19,12 +20,28 @@ class ImageDetailViewController: UIViewController {
 
     var imageUrl: URL!
 
+    let largeImageView = UIImageView()
+    let doneButton = UIButton(type: .system)
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .black
 
-        let doneButton = UIButton(type: .system)
+        // image
+        largeImageView.backgroundColor = .black
+        largeImageView.contentMode = .scaleAspectFit
+
+        largeImageView.kf.indicatorType = .activity
+        largeImageView.kf.indicator?.view.tintColor = .white
+
+
+        view.addSubview(largeImageView)
+        largeImageView.snp.makeConstraints { make in
+            make.edges.equalTo(view)
+        }
+
+        // button
         doneButton.setTitle("Done", for: .normal)
 
         doneButton.addTarget(self, action: #selector(doneButtonDidTriggerTap), for: .touchUpInside)
@@ -34,6 +51,17 @@ class ImageDetailViewController: UIViewController {
             make.leading.equalTo(view).offset(20)
             make.top.equalTo(view).offset(40)
         }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        largeImageView.kf.setImage(
+            with: imageUrl,
+            options: [
+                .transition(.fade(0.4))
+            ]
+        )
     }
 
     override var prefersStatusBarHidden: Bool {

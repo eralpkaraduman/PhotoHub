@@ -26,6 +26,7 @@ class ImageDetailCoordinator: Coordinator {
 
     func start() {
         let controller = ImageDetailViewController()
+        controller.imageUrl = imageUrl
         controller.modalTransitionStyle = .coverVertical
         controller.delegate = self
 
@@ -35,6 +36,7 @@ class ImageDetailCoordinator: Coordinator {
 }
 
 extension ImageDetailCoordinator: ImageDetailViewControllerDelegate {
+
     func imageDetailViewControllerDidFinish(_ controller: ImageDetailViewController) {
 
         controller.presentingViewController?.dismiss(animated: true, completion: {
