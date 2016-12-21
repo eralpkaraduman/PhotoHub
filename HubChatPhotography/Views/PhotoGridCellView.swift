@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PhotoGridCellView: UITableViewCell {
 
@@ -19,19 +20,24 @@ class PhotoGridCellView: UITableViewCell {
         }
     }
 
-    //var viewModel:
-
     override func awakeFromNib() {
         super.awakeFromNib()
 
         avatarImageView.layer.cornerRadius = 20
         avatarImageView.clipsToBounds = true
+        avatarImageView.kf.indicatorType = .activity
     }
 
     fileprivate func refreshView() {
         guard let viewModel = viewModel else { return }
 
         creatorUsernameLabel.text = viewModel.creatorUserName
+        avatarImageView.kf.setImage(
+            with: viewModel.avatarImageUrl,
+            options: [
+                .transition(.fade(0.4))
+            ]
+        )
     }
     
 }

@@ -6,5 +6,5 @@ target 'HubChatPhotography' do
   use_frameworks!
 
   # Pods for HubChatPhotography
-
+  pod 'Kingfisher', '~> 3.2'
 end

@@ -49,9 +49,9 @@
                                                                         <constraint firstAttribute="width" constant="4" id="i4B-Co-xCI"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ieQ-f1-vGe">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ieQ-f1-vGe">
                                                                     <rect key="frame" x="12" y="0.0" width="40" height="60"/>
-                                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <color key="backgroundColor" red="0.6470588235294118" green="0.64916764883527067" blue="0.64916764883527067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="40" id="Lod-go-clj"/>
                                                                         <constraint firstAttribute="width" constant="40" id="SMb-dN-jFK"/>

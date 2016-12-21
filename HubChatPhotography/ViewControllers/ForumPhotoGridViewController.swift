@@ -46,7 +46,7 @@ extension ForumPhotoGridViewController: ForumViewModelViewDelegate {
 
     func refreshView() {
         guard isViewLoaded else { return }
-        guard let viewModel = viewModel else { return }
+        guard let _ = viewModel else { return }
 
         tableView.reloadData()
     }
