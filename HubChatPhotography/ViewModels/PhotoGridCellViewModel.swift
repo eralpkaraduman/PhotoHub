@@ -24,4 +24,8 @@ class PhotoGridCellViewModel {
         return post.creatorUserName
     }
 
+    var titleText: String? {
+        return post.title
+    }
+
 }

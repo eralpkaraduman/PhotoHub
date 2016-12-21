@@ -13,6 +13,7 @@ class PhotoGridCellView: UITableViewCell {
 
     @IBOutlet weak var creatorUsernameLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
 
     var viewModel: PhotoGridCellViewModel? {
         didSet {
@@ -32,6 +33,8 @@ class PhotoGridCellView: UITableViewCell {
         guard let viewModel = viewModel else { return }
 
         creatorUsernameLabel.text = viewModel.creatorUserName
+        titleLabel.text = viewModel.titleText
+
         avatarImageView.kf.setImage(
             with: viewModel.avatarImageUrl,
             options: [
