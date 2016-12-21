@@ -21,8 +21,20 @@ class HubChatForumDetailViewModel: ForumViewModel {
         self.posts = posts
     }
 
+    var headerImageUrl: URL {
+        return forum.headerImageUrl
+    }
+
+    var logoImageUrl: URL {
+        return forum.logoImageUrl
+    }
+
     var titleText: String {
         return forum.titleText
+    }
+
+    var descriptionText: String {
+        return forum.descriptionText
     }
 
     var numberOfPosts: Int {

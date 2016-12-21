@@ -14,7 +14,7 @@ class ForumPhotoGridViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     var headerView = ForumHeaderView()
-    let headerHeight: CGFloat = 220
+    let headerHeight: CGFloat = 250
     var headerViewTopConstraint: Constraint!
     var headerViewHeightConstraint: Constraint!
 
@@ -42,11 +42,14 @@ class ForumPhotoGridViewController: UIViewController {
         super.viewDidLoad()
 
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 140
+        tableView.estimatedRowHeight = 200
         tableView.dataSource = self
         tableView.delegate = self
 
         view.addSubview(headerView)
+
+        headerView.isUserInteractionEnabled = false
+
         headerView.snp.makeConstraints { make in
             make.leading.equalTo(view)
             make.trailing.equalTo(view)
@@ -70,6 +73,12 @@ class ForumPhotoGridViewController: UIViewController {
         if offset > 0 {
             topConstraintOffset = 0
             heightConstraintOffset.add(offset)
+
+            headerView.setBlurApplied(false)
+
+        } else {
+
+            headerView.setBlurApplied(true)
         }
 
         headerViewTopConstraint.update(offset: topConstraintOffset)
@@ -83,8 +92,8 @@ extension ForumPhotoGridViewController: ForumViewModelViewDelegate {
 
     func refreshView() {
         guard isViewLoaded else { return }
-        guard let _ = viewModel else { return }
 
+        headerView.viewModel = viewModel
         tableView.reloadData()
     }
 }

@@ -23,11 +23,13 @@ protocol ForumViewModel: class {
     weak var viewDelegate: ForumViewModelViewDelegate? { get set }
     weak var coordinatorDelegate: ForumViewModelCoordinatorDelegate? { get set }
 
+    var headerImageUrl: URL { get }
+    var logoImageUrl: URL { get }
     var titleText: String { get }
     var numberOfPosts: Int { get }
+    var descriptionText: String { get }
 
     func postAtIndex(_ index: Int) -> Post?
-
     func photoGridCellViewModelAtIndex(_ index: Int) -> PhotoGridCellViewModel?
 
 }
