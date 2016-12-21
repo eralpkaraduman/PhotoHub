@@ -37,4 +37,13 @@ class HubChatForumDetailViewModel: ForumViewModel {
 
         return posts[index]
     }
+
+    func photoGridCellViewModelAtIndex(_ index: Int) -> PhotoGridCellViewModel? {
+
+        if let post = postAtIndex(index) {
+            return HubChatPhotoGridCellViewModel(post: post)
+        }
+
+        return nil
+    }
 }

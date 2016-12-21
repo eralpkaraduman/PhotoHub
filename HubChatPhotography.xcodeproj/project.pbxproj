@@ -33,6 +33,8 @@
 		53AC44C01E09F5BB00DF04D4 /* PhotoGridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44BF1E09F5BB00DF04D4 /* PhotoGridCellView.swift */; };
 		53AC44C41E0A023200DF04D4 /* PhotoGridCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44C31E0A023200DF04D4 /* PhotoGridCellViewModel.swift */; };
 		53AC44C61E0A0D4900DF04D4 /* PhotoGridThumbnailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44C51E0A0D4900DF04D4 /* PhotoGridThumbnailCellView.swift */; };
+		53AC44C81E0A206400DF04D4 /* HubChatPhotoGridCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44C71E0A206400DF04D4 /* HubChatPhotoGridCellViewModel.swift */; };
+		53AC44CA1E0A237500DF04D4 /* ForumHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44C91E0A237500DF04D4 /* ForumHeaderView.swift */; };
 		53C109B41E0944E40016481D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 53C109B31E0944E40016481D /* .gitkeep */; };
 		53C109B71E09454D0016481D /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B61E09454D0016481D /* Forum.swift */; };
 		53C109B91E0945CD0016481D /* HubChatForum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B81E0945CD0016481D /* HubChatForum.swift */; };
@@ -72,6 +74,8 @@
 		53AC44BF1E09F5BB00DF04D4 /* PhotoGridCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridCellView.swift; sourceTree = "<group>"; };
 		53AC44C31E0A023200DF04D4 /* PhotoGridCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridCellViewModel.swift; sourceTree = "<group>"; };
 		53AC44C51E0A0D4900DF04D4 /* PhotoGridThumbnailCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridThumbnailCellView.swift; sourceTree = "<group>"; };
+		53AC44C71E0A206400DF04D4 /* HubChatPhotoGridCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatPhotoGridCellViewModel.swift; sourceTree = "<group>"; };
+		53AC44C91E0A237500DF04D4 /* ForumHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumHeaderView.swift; sourceTree = "<group>"; };
 		53C109B31E0944E40016481D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		53C109B61E09454D0016481D /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
 		53C109B81E0945CD0016481D /* HubChatForum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatForum.swift; sourceTree = "<group>"; };
@@ -188,10 +192,10 @@
 		5348276A1E0855FC00BFEDF4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				53AC44C31E0A023200DF04D4 /* PhotoGridCellViewModel.swift */,
 				534827781E0939F700BFEDF4 /* Protocols */,
 				5348277B1E093A7300BFEDF4 /* HubChatPhotographyForumIntroViewModel.swift */,
 				53AC44BD1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift */,
+				53AC44C71E0A206400DF04D4 /* HubChatPhotoGridCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -201,6 +205,7 @@
 			children = (
 				53AC44BF1E09F5BB00DF04D4 /* PhotoGridCellView.swift */,
 				53AC44C51E0A0D4900DF04D4 /* PhotoGridThumbnailCellView.swift */,
+				53AC44C91E0A237500DF04D4 /* ForumHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			children = (
 				534827791E093A0E00BFEDF4 /* IntroViewModel.swift */,
 				53AC44BB1E09E0A400DF04D4 /* ForumViewModel.swift */,
+				53AC44C31E0A023200DF04D4 /* PhotoGridCellViewModel.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				535C128F1E0984CE0018D211 /* JsonModel.swift in Sources */,
 				534827541E08230600BFEDF4 /* AppDelegate.swift in Sources */,
 				53AC44C01E09F5BB00DF04D4 /* PhotoGridCellView.swift in Sources */,
+				53AC44C81E0A206400DF04D4 /* HubChatPhotoGridCellViewModel.swift in Sources */,
 				53C109BC1E0956590016481D /* HubChatApiClientError.swift in Sources */,
 				53AC44BC1E09E0A400DF04D4 /* ForumViewModel.swift in Sources */,
 				5348277C1E093A7300BFEDF4 /* HubChatPhotographyForumIntroViewModel.swift in Sources */,
@@ -414,6 +421,7 @@
 				534827771E08658800BFEDF4 /* IntroCoordinator.swift in Sources */,
 				534827751E0863A200BFEDF4 /* IntroViewController.swift in Sources */,
 				53C109B71E09454D0016481D /* Forum.swift in Sources */,
+				53AC44CA1E0A237500DF04D4 /* ForumHeaderView.swift in Sources */,
 				53AC44B61E09D62800DF04D4 /* ForumCoordinator.swift in Sources */,
 				535C12891E097A540018D211 /* HubChatApiClient.swift in Sources */,
 			);

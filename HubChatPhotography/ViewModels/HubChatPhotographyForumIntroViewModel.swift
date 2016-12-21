@@ -41,7 +41,8 @@ class HubChatPhotographyForumIntroViewModel: IntroViewModel {
 
         fetchPostsTask?.cancel()
 
-        fetchPostsTask = HubChatApiClient.shared.fetchPostsForForumId(forum.id) { (error, posts) in
+        fetchPostsTask = HubChatApiClient.shared.fetchPostsForForumId(forum.forumId) {
+            (error, posts) in
 
             guard error == nil else {
                 self.reportError(error)

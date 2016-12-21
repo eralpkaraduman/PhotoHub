@@ -71,10 +71,7 @@ extension ForumPhotoGridViewController: UITableViewDataSource {
             fatalError()
         }
 
-        if let post = viewModel?.postAtIndex(indexPath.row) {
-
-            cellView.viewModel = PhotoGridCellViewModel(post: post)
-        }
+        cellView.viewModel = viewModel?.photoGridCellViewModelAtIndex(indexPath.row)
 
         return cellView
     }

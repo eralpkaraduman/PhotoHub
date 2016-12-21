@@ -10,7 +10,7 @@ import Foundation
 
 protocol Forum: JsonModel {
 
-    var id: String { get }
+    var forumId: String { get }
     var headerImageUrl: URL { get }
     var logoImageUrl: URL { get }
     var titleText: String { get }

@@ -10,7 +10,7 @@ import Foundation
 
 struct HubChatPost: Post {
 
-    var id: String
+    var postId: String
     var imageUrls: [URL]
     var creatorUserName: String
     var creatorAvatarUrl: URL
@@ -21,14 +21,14 @@ struct HubChatPost: Post {
 
         guard
         let json = json as? NSDictionary,
-        let id = json.value(forKeyPath: "id") as? String,
+        let postId = json.value(forKeyPath: "id") as? String,
         let images = json.value(forKeyPath: "entities.images") as? [NSDictionary],
         let creatorUserName = json.value(forKeyPath: "createdBy.username") as? String,
         let creatorAvatarUrlString = json.value(forKeyPath: "createdBy.avatar.url") as? String,
         let creatorAvatarUrl = URL(string: creatorAvatarUrlString)
         else { return nil }
 
-        self.id = id
+        self.postId = postId
 
         title = json.value(forKeyPath: "rawContent") as? String
 

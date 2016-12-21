@@ -8,47 +8,14 @@
 
 import Foundation
 
-class PhotoGridCellViewModel {
+protocol PhotoGridCellViewModel {
 
-    let post: Post
+    var avatarImageUrl: URL { get }
+    var creatorUserName: String { get }
+    var titleText: String? { get }
+    var upvoteCountText: String { get }
+    var numberOfPhotos: Int { get }
 
-    init(post: Post) {
-        self.post = post
-    }
-
-    var avatarImageUrl: URL {
-        return post.creatorAvatarUrl
-    }
-
-    var creatorUserName: String {
-        return post.creatorUserName
-    }
-
-    var titleText: String? {
-        return post.title
-    }
-
-    var upvoteCountText: String {
-        return String(post.upVotes)
-    }
-
-    var numberOfPhotos: Int {
-        return post.imageUrls.count
-    }
-
-    func photoUrlAtIndex(_ index: Int) -> URL? {
-
-        guard 0 ..< numberOfPhotos ~= index else {
-            return nil
-        }
-
-        return post.imageUrls[index]
-    }
-
-
-    func thumbnailUrlAtIndex(_ index: Int) -> URL? {
-
-        return photoUrlAtIndex(index)
-    }
-
+    func photoUrlAtIndex(_ index: Int) -> URL?
+    func thumbnailUrlAtIndex(_ index: Int) -> URL?
 }

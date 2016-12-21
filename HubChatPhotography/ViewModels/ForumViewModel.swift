@@ -28,4 +28,6 @@ protocol ForumViewModel: class {
 
     func postAtIndex(_ index: Int) -> Post?
 
+    func photoGridCellViewModelAtIndex(_ index: Int) -> PhotoGridCellViewModel?
+
 }
