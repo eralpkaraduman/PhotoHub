@@ -14,6 +14,7 @@ class PhotoGridCellView: UITableViewCell {
     @IBOutlet weak var creatorUsernameLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var upvoteCountLabel: UILabel!
 
     var viewModel: PhotoGridCellViewModel? {
         didSet {
@@ -34,6 +35,7 @@ class PhotoGridCellView: UITableViewCell {
 
         creatorUsernameLabel.text = viewModel.creatorUserName
         titleLabel.text = viewModel.titleText
+        upvoteCountLabel.text = viewModel.upvoteCountText
 
         avatarImageView.kf.setImage(
             with: viewModel.avatarImageUrl,

@@ -28,4 +28,8 @@ class PhotoGridCellViewModel {
         return post.title
     }
 
+    var upvoteCountText: String {
+        return String(post.upVotes)
+    }
+
 }
