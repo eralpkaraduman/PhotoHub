@@ -7,9 +7,30 @@
 //
 
 import UIKit
+import SnapKit
 
-class UIView {
+class ForumHeaderView: UIView {
 
-    
+    let coverImageView = UIImageView()
+
+    init() {
+        super.init(frame: CGRect.zero)
+
+        isUserInteractionEnabled = false
+
+        coverImageView.backgroundColor = .blue
+
+        addSubview(coverImageView)
+
+        coverImageView.snp.makeConstraints { make in
+            make.edges.equalTo(self)
+        }
+
+
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
 }

@@ -7,10 +7,18 @@
 //
 
 import UIKit
+import SnapKit
 
 class ForumPhotoGridViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+
+    var headerView = ForumHeaderView()
+    let headerHeight: CGFloat = 220
+    var headerViewTopConstraint: Constraint!
+    var headerViewHeightConstraint: Constraint!
+
+    let statusBarHeight: CGFloat = 20
 
     let cellReuseIdentifier = "photoGridCell"
 
@@ -35,10 +43,39 @@ class ForumPhotoGridViewController: UIViewController {
 
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
-
         tableView.dataSource = self
+        tableView.delegate = self
+
+        view.addSubview(headerView)
+        headerView.snp.makeConstraints { make in
+            make.leading.equalTo(view)
+            make.trailing.equalTo(view)
+            headerViewHeightConstraint = make.height.equalTo(headerHeight).constraint
+            headerViewTopConstraint = make.top.equalTo(view).constraint
+        }
+
+        tableView.contentInset = UIEdgeInsets(
+            top: headerHeight - statusBarHeight,
+            left: 0, bottom: 0, right: 0
+        )
 
         refreshView()
+    }
+
+    fileprivate func updateHeaderLayout() {
+
+        let offset = -(tableView.contentOffset.y + tableView.contentInset.top)
+        var topConstraintOffset = offset
+        var heightConstraintOffset = headerHeight
+        if offset > 0 {
+            topConstraintOffset = 0
+            heightConstraintOffset.add(offset)
+        }
+
+        headerViewTopConstraint.update(offset: topConstraintOffset)
+        headerViewHeightConstraint.update(offset: heightConstraintOffset)
+
+        headerView.layoutIfNeeded()
     }
 }
 
@@ -75,4 +112,17 @@ extension ForumPhotoGridViewController: UITableViewDataSource {
 
         return cellView
     }
+}
+
+extension ForumPhotoGridViewController: UITableViewDelegate {
+
+}
+
+extension ForumPhotoGridViewController: UIScrollViewDelegate {
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+
+        updateHeaderLayout()
+    }
+
 }

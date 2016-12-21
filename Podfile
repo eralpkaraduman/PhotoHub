@@ -7,4 +7,5 @@ target 'HubChatPhotography' do
 
   # Pods for HubChatPhotography
   pod 'Kingfisher', '~> 3.2'
+  pod 'SnapKit', '~> 3.0.2'
 end
