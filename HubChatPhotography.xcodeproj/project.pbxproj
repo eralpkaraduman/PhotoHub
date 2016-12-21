@@ -31,6 +31,7 @@
 		53AC44BC1E09E0A400DF04D4 /* ForumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44BB1E09E0A400DF04D4 /* ForumViewModel.swift */; };
 		53AC44BE1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44BD1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift */; };
 		53AC44C01E09F5BB00DF04D4 /* PhotoGridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44BF1E09F5BB00DF04D4 /* PhotoGridCellView.swift */; };
+		53AC44C41E0A023200DF04D4 /* PhotoGridCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC44C31E0A023200DF04D4 /* PhotoGridCellViewModel.swift */; };
 		53C109B41E0944E40016481D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 53C109B31E0944E40016481D /* .gitkeep */; };
 		53C109B71E09454D0016481D /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B61E09454D0016481D /* Forum.swift */; };
 		53C109B91E0945CD0016481D /* HubChatForum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C109B81E0945CD0016481D /* HubChatForum.swift */; };
@@ -68,6 +69,7 @@
 		53AC44BB1E09E0A400DF04D4 /* ForumViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumViewModel.swift; sourceTree = "<group>"; };
 		53AC44BD1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatForumDetailViewModel.swift; sourceTree = "<group>"; };
 		53AC44BF1E09F5BB00DF04D4 /* PhotoGridCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridCellView.swift; sourceTree = "<group>"; };
+		53AC44C31E0A023200DF04D4 /* PhotoGridCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGridCellViewModel.swift; sourceTree = "<group>"; };
 		53C109B31E0944E40016481D /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		53C109B61E09454D0016481D /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
 		53C109B81E0945CD0016481D /* HubChatForum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubChatForum.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		5348276A1E0855FC00BFEDF4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				53AC44C31E0A023200DF04D4 /* PhotoGridCellViewModel.swift */,
 				534827781E0939F700BFEDF4 /* Protocols */,
 				5348277B1E093A7300BFEDF4 /* HubChatPhotographyForumIntroViewModel.swift */,
 				53AC44BD1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift */,
@@ -402,6 +405,7 @@
 				53AC44BC1E09E0A400DF04D4 /* ForumViewModel.swift in Sources */,
 				5348277C1E093A7300BFEDF4 /* HubChatPhotographyForumIntroViewModel.swift in Sources */,
 				5348277A1E093A0E00BFEDF4 /* IntroViewModel.swift in Sources */,
+				53AC44C41E0A023200DF04D4 /* PhotoGridCellViewModel.swift in Sources */,
 				53AC44BE1E09E2AE00DF04D4 /* HubChatForumDetailViewModel.swift in Sources */,
 				534827771E08658800BFEDF4 /* IntroCoordinator.swift in Sources */,
 				534827751E0863A200BFEDF4 /* IntroViewController.swift in Sources */,

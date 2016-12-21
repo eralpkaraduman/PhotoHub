@@ -11,4 +11,27 @@ import UIKit
 class PhotoGridCellView: UITableViewCell {
 
     @IBOutlet weak var creatorUsernameLabel: UILabel!
+    @IBOutlet weak var avatarImageView: UIImageView!
+
+    var viewModel: PhotoGridCellViewModel? {
+        didSet {
+            refreshView()
+        }
+    }
+
+    //var viewModel:
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        avatarImageView.layer.cornerRadius = 20
+        avatarImageView.clipsToBounds = true
+    }
+
+    fileprivate func refreshView() {
+        guard let viewModel = viewModel else { return }
+
+        creatorUsernameLabel.text = viewModel.creatorUserName
+    }
+    
 }

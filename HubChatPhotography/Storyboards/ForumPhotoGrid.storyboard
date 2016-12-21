@@ -33,18 +33,38 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7K-Gb-Xdj" userLabel="backdrop">
-                                                    <rect key="frame" x="-0.5" y="19.5" width="375" height="59"/>
+                                                    <rect key="frame" x="-0.5" y="20" width="375" height="60"/>
                                                     <color key="backgroundColor" red="0.14239607393909587" green="0.14314160312202306" blue="0.14314160312202306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wbd-r3-O5O">
-                                                    <rect key="frame" x="0.0" y="20" width="375" height="59"/>
+                                                    <rect key="frame" x="0.0" y="20" width="375" height="60"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hp-A0-2lT">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="okd-Zf-wnH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fx-I1-EUa" userLabel="spacer">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="4" height="60"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="4" id="i4B-Co-xCI"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ieQ-f1-vGe">
+                                                                    <rect key="frame" x="12" y="0.0" width="40" height="60"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="Lod-go-clj"/>
+                                                                        <constraint firstAttribute="width" constant="40" id="SMb-dN-jFK"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hp-A0-2lT">
+                                                                    <rect key="frame" x="60" y="0.0" width="315" height="60"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
@@ -61,6 +81,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="avatarImageView" destination="ieQ-f1-vGe" id="S7n-n9-jtl"/>
                                             <outlet property="creatorUsernameLabel" destination="5Hp-A0-2lT" id="UZS-ze-VIm"/>
                                         </connections>
                                     </tableViewCell>

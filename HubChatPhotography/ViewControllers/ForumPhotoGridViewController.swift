@@ -33,7 +33,9 @@ class ForumPhotoGridViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //tableView.delegate = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 140
+
         tableView.dataSource = self
 
         refreshView()
@@ -45,6 +47,8 @@ extension ForumPhotoGridViewController: ForumViewModelViewDelegate {
     func refreshView() {
         guard isViewLoaded else { return }
         guard let viewModel = viewModel else { return }
+
+        tableView.reloadData()
     }
 }
 
@@ -65,6 +69,11 @@ extension ForumPhotoGridViewController: UITableViewDataSource {
             for: indexPath
         ) as? PhotoGridCellView else {
             fatalError()
+        }
+
+        if let post = viewModel?.postAtIndex(indexPath.row) {
+
+            cellView.viewModel = PhotoGridCellViewModel(post: post)
         }
 
         return cellView

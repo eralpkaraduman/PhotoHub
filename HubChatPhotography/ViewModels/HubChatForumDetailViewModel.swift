@@ -37,15 +37,4 @@ class HubChatForumDetailViewModel: ForumViewModel {
 
         return posts[index]
     }
-
-    func imageUrlsAtIndex(_ index: Int) -> [URL] {
-
-        guard let post = postAtIndex(index) else {
-            return []
-        }
-
-        return post.imageUrls
-    }
-
-
 }
